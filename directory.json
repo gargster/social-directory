@@ -1,5 +1,8 @@
 {
   "amit.social": {
     "repoURL": "https://github.com/gargster/amit-social.git"
+  },
+  "dylan.social": {
+    "repoURL": "https://github.com/gargster/dylan-social.git"
   }
 }
