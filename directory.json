@@ -10,5 +10,8 @@
   },
   "misty.social": {
     "repoURL": "https://github.com/gargster/misty-social.git"
+  },
+  "brok.social": {
+    "repoURL": "https://github.com/gargster/brok-social.git"
   }
 }
