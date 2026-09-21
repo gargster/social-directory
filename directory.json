@@ -4,5 +4,8 @@
   },
   "dylan.social": {
     "repoURL": "https://github.com/gargster/dylan-social.git"
+  },
+  "ash.social": {
+    "repoURL": "https://github.com/gargster/ash-social.git"
   }
 }
