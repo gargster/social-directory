@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Social Directory</title>
+</head>
+<body>
+    <h1>Social Directory</h1>
+    <p>Decentralised user discovery directory.</p>
+
+    <pre id="directory">Loading...</pre>
+
+    <script>
+        fetch("directory.json")
+            .then(response => response.json())
+            .then(directory => {
+                document.getElementById("directory").textContent =
+                    JSON.stringify(directory, null, 2);
+            })
+            .catch(error => {
+                document.getElementById("directory").textContent =
+                    "Failed to load directory.";
+            });
+    </script>
+</body>
+</html>
