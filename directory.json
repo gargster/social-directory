@@ -13,5 +13,8 @@
   },
   "brok.social": {
     "repoURL": "https://github.com/gargster/brok-social.git"
+  },
+  "donald.social": {
+    "repoURL": "https://github.com/gargster/donald-social.git"
   }
 }
