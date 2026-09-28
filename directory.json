@@ -28,5 +28,8 @@
   },
   "demo2.social": {
     "repoURL": "https://github.com/gargster/demo2-social.git"
+  },
+  "demo3.social": {
+    "repoURL": "https://github.com/gargster/demo3-social.git"
   }
 }
