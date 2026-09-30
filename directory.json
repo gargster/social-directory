@@ -8,6 +8,9 @@
   "ash.social": {
     "repoURL": "https://github.com/gargster/ash-social.git"
   },
+  "canonical.social": {
+    "repoURL": "https://github.com/gargster/canonical-social.git"
+  },
   "misty.social": {
     "repoURL": "https://github.com/gargster/misty-social.git"
   },
