@@ -43,5 +43,8 @@
   },
   "testperson1.social": {
     "repoURL": "https://github.com/gargster/testperson1-social.git"
+  },
+  "testperson2.social": {
+    "repoURL": "https://github.com/gargster/testperson2-social.git"
   }
 }
