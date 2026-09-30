@@ -37,5 +37,8 @@
   },
   "testing124.social": {
     "repoURL": "https://github.com/gargster/testing124-social.git"
+  },
+  "testing125.social": {
+    "repoURL": "https://github.com/gargster/testing125-social.git"
   }
 }
