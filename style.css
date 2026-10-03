@@ -1,0 +1,252 @@
+:root {
+  color-scheme: light;
+  --background: #f6f7f9;
+  --surface: #ffffff;
+  --text: #20242b;
+  --muted: #697386;
+  --line: #e3e7ed;
+  --accent: #464feb;
+  --accent-soft: #eef0ff;
+  --shadow: 0 12px 36px rgb(27 39 67 / 6%);
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  min-width: 320px;
+  min-height: 100vh;
+  margin: 0;
+  background:
+    radial-gradient(ellipse at 12% 0%, rgb(70 79 235 / 8%), transparent 32rem),
+    var(--background);
+  color: var(--text);
+}
+
+a {
+  color: inherit;
+}
+
+.site-header {
+  border-bottom: 1px solid rgb(227 231 237 / 85%);
+  background: rgb(255 255 255 / 82%);
+}
+
+.header-inner {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  width: min(100% - 2rem, 960px);
+  margin: 0 auto;
+  padding: 1.05rem 0;
+}
+
+.brand {
+  color: var(--text);
+  font-size: 1.35rem;
+  font-weight: 800;
+  letter-spacing: -0.07em;
+  text-decoration: none;
+}
+
+.brand span {
+  color: var(--accent);
+}
+
+.site-label,
+.site-footer {
+  color: var(--muted);
+  font-size: 0.82rem;
+}
+
+.site-label {
+  margin: 0;
+}
+
+.directory-layout {
+  width: min(100% - 2rem, 960px);
+  margin: 2.6rem auto 3rem;
+}
+
+.directory-intro,
+.member-card {
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  background: var(--surface);
+  box-shadow: var(--shadow);
+}
+
+.directory-intro {
+  margin-bottom: 2.2rem;
+  padding: clamp(1.5rem, 5vw, 2.5rem);
+  background:
+    radial-gradient(ellipse at 100% 0%, rgb(70 79 235 / 8%), transparent 26rem),
+    var(--surface);
+}
+
+.eyebrow {
+  margin: 0 0 0.55rem;
+  color: var(--accent);
+  font-size: 0.68rem;
+  font-weight: 800;
+  letter-spacing: 0.13em;
+}
+
+.directory-intro h1 {
+  margin: 0;
+  font-size: clamp(2rem, 6vw, 3rem);
+  letter-spacing: -0.06em;
+}
+
+.intro-copy {
+  max-width: 38rem;
+  margin: 0.8rem 0 0;
+  color: var(--muted);
+  font-size: 1rem;
+  line-height: 1.65;
+}
+
+.directory-heading {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 1rem;
+  margin: 0 0 1rem;
+}
+
+.directory-heading h2 {
+  margin: 0;
+  font-size: 1.8rem;
+  letter-spacing: -0.055em;
+}
+
+.member-count {
+  margin: 0 0 0.2rem;
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+
+.directory-status {
+  margin: 1rem 0;
+  color: var(--muted);
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.directory-status:empty {
+  display: none;
+}
+
+.member-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 1fr));
+  gap: 0.9rem;
+}
+
+.member-card {
+  display: flex;
+  min-height: 150px;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1.2rem 1.3rem;
+}
+
+.member-handle {
+  margin: 0;
+  font-size: 1.05rem;
+  font-weight: 750;
+  overflow-wrap: anywhere;
+}
+
+.member-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+  margin-top: 1.5rem;
+}
+
+.member-link {
+  display: inline-flex;
+  min-height: 2.35rem;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem 0.75rem;
+  border: 1px solid var(--line);
+  border-radius: 9px;
+  color: var(--text);
+  font-size: 0.82rem;
+  font-weight: 650;
+  text-decoration: none;
+}
+
+.member-link:hover {
+  border-color: #c8ccf8;
+  background: var(--accent-soft);
+}
+
+.primary-link {
+  border-color: var(--accent);
+  background: var(--accent);
+  color: #ffffff;
+}
+
+.primary-link:hover {
+  border-color: #353dd5;
+  background: #353dd5;
+  color: #ffffff;
+}
+
+.member-note {
+  margin: 1rem 0 0;
+  color: var(--muted);
+  font-size: 0.85rem;
+  line-height: 1.5;
+}
+
+.member-link:focus-visible,
+.brand:focus-visible {
+  outline: 3px solid rgb(70 79 235 / 35%);
+  outline-offset: 2px;
+}
+
+.site-footer {
+  width: min(100% - 2rem, 960px);
+  margin: 0 auto;
+  padding: 0 0 1.8rem;
+  text-align: center;
+}
+
+.site-footer p {
+  margin: 0;
+}
+
+@media (max-width: 680px) {
+  .header-inner {
+    align-items: center;
+  }
+
+  .site-label {
+    max-width: 12rem;
+    text-align: right;
+  }
+
+  .directory-layout {
+    margin-top: 1.4rem;
+  }
+
+  .directory-intro {
+    margin-bottom: 1.6rem;
+  }
+}
+
+@media (max-width: 420px) {
+  .directory-heading {
+    align-items: flex-start;
+  }
+
+  .member-card {
+    padding: 1rem;
+  }
+}

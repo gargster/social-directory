@@ -1,26 +1,48 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Social Directory</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Discover users and their social repository URLs.">
+  <title>Social directory</title>
+  <link rel="stylesheet" href="./style.css">
+  <script src="./app.js" defer></script>
 </head>
 <body>
-    <h1>Social Directory</h1>
-    <p>Decentralised user discovery directory.</p>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="./" aria-label="Social directory home">social<span>.</span></a>
+      <p class="site-label">Decentralised discovery directory</p>
+    </div>
+  </header>
 
-    <pre id="directory">Loading...</pre>
+  <main class="directory-layout">
+    <section class="directory-intro" aria-labelledby="directory-title">
+      <p class="eyebrow">DISCOVER</p>
+      <h1 id="directory-title">Social directory</h1>
+      <p class="intro-copy">
+        Find people in the network and access their repository URLs to follow them.
+      </p>
+    </section>
 
-    <script>
-        fetch("directory.json")
-            .then(response => response.json())
-            .then(directory => {
-                document.getElementById("directory").textContent =
-                    JSON.stringify(directory, null, 2);
-            })
-            .catch(error => {
-                document.getElementById("directory").textContent =
-                    "Failed to load directory.";
-            });
-    </script>
+    <section class="directory-section" aria-labelledby="members-title">
+      <div class="directory-heading">
+        <div>
+          <p class="eyebrow">THE NETWORK</p>
+          <h2 id="members-title">People</h2>
+        </div>
+        <p id="member-count" class="member-count"></p>
+      </div>
+
+      <p id="directory-status" class="directory-status" role="status" aria-live="polite">
+        Loading directory…
+      </p>
+      <div id="member-list" class="member-list"></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Profiles discovered through a shared Git directory</p>
+  </footer>
 </body>
 </html>
