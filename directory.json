@@ -17,5 +17,9 @@
     "repoURL": "https://github.com/gargster/testperson3-social.git",
     "publicKey": "ed25519:d58c64edefc76f350720d80a9db27794cd3520b90b2aed90cdb6fa1111efa838",
     "siteURL": "https://gargster.github.io/testperson3-social/"
+  },
+  "testperson4.social": {
+    "repoURL": "https://github.com/gargster/testperson4-social.git",
+    "publicKey": "ed25519:5f0bb802174a3026f6f5c566a6dbcdc600654c96f762876b4ac0f260399f5e76"
   }
 }
