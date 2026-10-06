@@ -27,6 +27,20 @@ function validRepositoryURL(repoURL) {
   }
 }
 
+function validSiteURL(siteURL) {
+  if (typeof siteURL !== "string") return null;
+
+  try {
+    const url = new URL(siteURL);
+    if (url.protocol !== "https:" || url.username || url.password) {
+      return null;
+    }
+    return siteURL;
+  } catch {
+    return null;
+  }
+}
+
 function createLink(label, url, className) {
   const link = createElement("a", className, label);
   link.href = url;
@@ -37,7 +51,13 @@ function createLink(label, url, className) {
 
 function renderMember(handle, entry) {
   const card = createElement("article", "member-card");
-  const heading = createElement("h3", "member-handle", handle);
+  const heading = createElement("h3", "member-handle");
+  const siteURL = validSiteURL(entry.siteURL);
+  heading.append(
+    siteURL
+      ? createLink(handle, siteURL, "member-site-link")
+      : document.createTextNode(handle)
+  );
   const repositoryURL = validRepositoryURL(entry.repoURL);
   const actions = createElement("div", "member-actions");
 
