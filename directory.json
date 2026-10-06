@@ -1,14 +1,18 @@
 {
   "canonical.social": {
-    "repoURL": "https://github.com/gargster/canonical-social.git"
+    "repoURL": "https://github.com/gargster/canonical-social.git",
+    "publicKey": "ed25519:c228e14ec05bb967c8664776e46f9a22c738e924bfe5211974e7bc9f078103ba"
   },
   "testperson1.social": {
-    "repoURL": "https://github.com/gargster/testperson1-social.git"
+    "repoURL": "https://github.com/gargster/testperson1-social.git",
+    "publicKey": "ed25519:189c39f67de223e961d8fd9c075d2945b3062ab7480f33386956cd81c32ace37"
   },
   "testperson2.social": {
-    "repoURL": "https://github.com/gargster/testperson2-social.git"
+    "repoURL": "https://github.com/gargster/testperson2-social.git",
+    "publicKey": "ed25519:57873577004887bfa9a0b8f51b301cb6416c04808f111bae13e0e48fec11fee3"
   },
   "testperson3.social": {
-    "repoURL": "https://github.com/gargster/testperson3-social.git"
+    "repoURL": "https://github.com/gargster/testperson3-social.git",
+    "publicKey": "ed25519:d58c64edefc76f350720d80a9db27794cd3520b90b2aed90cdb6fa1111efa838"
   }
 }
