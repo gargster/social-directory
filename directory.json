@@ -27,5 +27,9 @@
     "repoURL": "https://github.com/gargster/alices-social.git",
     "publicKey": "ed25519:50fcefe2b0c66b12fc627f132eb391fe2de68e508fc7b67714ad82af77fc3952",
     "siteURL": "https://gargster.github.io/alices-social/"
+  },
+  "bob.social": {
+    "repoURL": "https://github.com/gargster/bob-social.git",
+    "publicKey": "ed25519:5e7327ca95099247915583fbbb4e4bcc187089adc830d7fc5d132cff3b417a04"
   }
 }
