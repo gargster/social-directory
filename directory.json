@@ -25,6 +25,7 @@
   },
   "alice.social": {
     "repoURL": "https://github.com/gargster/alices-social.git",
-    "publicKey": "ed25519:50fcefe2b0c66b12fc627f132eb391fe2de68e508fc7b67714ad82af77fc3952"
+    "publicKey": "ed25519:50fcefe2b0c66b12fc627f132eb391fe2de68e508fc7b67714ad82af77fc3952",
+    "siteURL": "https://gargster.github.io/alices-social/"
   }
 }
