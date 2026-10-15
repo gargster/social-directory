@@ -32,5 +32,9 @@
     "repoURL": "https://github.com/gargster/bob-social.git",
     "publicKey": "ed25519:5e7327ca95099247915583fbbb4e4bcc187089adc830d7fc5d132cff3b417a04",
     "siteURL": "https://gargster.github.io/bob-social/"
+  },
+  "charlie.social": {
+    "repoURL": "https://github.com/gargster/charlie-social.git",
+    "publicKey": "ed25519:10545b4c9d9e27e255ef570b3cafabc3d1ae39ece5dd72d8f75e44cc1dff453f"
   }
 }
