@@ -30,6 +30,7 @@
   },
   "bob.social": {
     "repoURL": "https://github.com/gargster/bob-social.git",
-    "publicKey": "ed25519:5e7327ca95099247915583fbbb4e4bcc187089adc830d7fc5d132cff3b417a04"
+    "publicKey": "ed25519:5e7327ca95099247915583fbbb4e4bcc187089adc830d7fc5d132cff3b417a04",
+    "siteURL": "https://gargster.github.io/bob-social/"
   }
 }
