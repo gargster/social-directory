@@ -36,5 +36,9 @@
   "charlie.social": {
     "repoURL": "https://github.com/gargster/charlie-social.git",
     "publicKey": "ed25519:10545b4c9d9e27e255ef570b3cafabc3d1ae39ece5dd72d8f75e44cc1dff453f"
+  },
+  "case3-target.social": {
+    "repoURL": "https://github.com/gargster/case3-target-social.git",
+    "publicKey": "ed25519:040e242f933da1d8353457442b7c2014887a37a5d0dbc9102b252b8945d50114"
   }
 }
