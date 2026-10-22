@@ -43,6 +43,7 @@
   },
   "check.social": {
     "repoURL": "https://github.com/gargster/check-social.git",
-    "publicKey": "ed25519:4b24dc3d13fb8fc66b5d884993ded85752c61e4cd6a66dcab427da757e7cf877"
+    "publicKey": "ed25519:4b24dc3d13fb8fc66b5d884993ded85752c61e4cd6a66dcab427da757e7cf877",
+    "siteURL": "https://gargster.github.io/check-social/"
   }
 }
