@@ -40,5 +40,9 @@
   "case3-target.social": {
     "repoURL": "https://github.com/gargster/case3-target-social.git",
     "publicKey": "ed25519:040e242f933da1d8353457442b7c2014887a37a5d0dbc9102b252b8945d50114"
+  },
+  "check.social": {
+    "repoURL": "https://github.com/gargster/check-social.git",
+    "publicKey": "ed25519:4b24dc3d13fb8fc66b5d884993ded85752c61e4cd6a66dcab427da757e7cf877"
   }
 }
